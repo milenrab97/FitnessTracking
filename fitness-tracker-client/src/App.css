@@ -1,0 +1,216 @@
+.generate-meme {
+  display: flex;
+  flex-direction: row;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px;
+}
+
+canvas {
+  border: 2px solid white;
+  border-radius: 2px;
+  margin: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s background-color;
+}
+
+nav a:hover {
+  background-color: #999;
+}
+
+nav a.active {
+  background-color: #888;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 640px) {
+  nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+
+/* login/register */
+.register-container {
+  width: 360px;
+  background-color: #f5f5f0;
+}
+
+.register-header {
+  color: white;
+  background: #444444;
+  height: 40px;
+  position: relative;
+}
+
+.register-header h4 {
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -25%);
+}
+
+.form-register {
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+}
+
+.form-register input {
+  width: 100%;
+  height: 31px;
+  margin-bottom: 17px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#errorMsg {
+  margin-bottom: 15px;
+  color: red;
+}
+
+.btn-register {
+  background-color: #444444;
+  color: white;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+::placeholder {
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+.invisible {
+  display: none;
+}
+
+#templates-container {
+  text-align: center;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#user-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.template-img {
+  max-height:100px;
+  height:auto;
+}
+
+.memeCard {
+  width: 280px;
+  margin-left: 20;
+}
+
+#comment-input {
+  width: 500px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#meme-list {
+  text-align: center;
+}
+
+#meme-list,#templates-container img:hover {
+  cursor: pointer;
+}
+
+#meme-details {
+  max-width: 500px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #444444;
+  color: #cccccc;
+}
+
+tr:nth-child(odd) {
+  color: #444444;
+  background-color: #cccccc;
+}
