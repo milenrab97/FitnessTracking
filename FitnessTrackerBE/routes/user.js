@@ -6,8 +6,10 @@ router.get('/:id', async function (req, res) {
     try {
         const query = 'SELECT * FROM users WHERE id = ?'
         const rows = await pool.query(query, req.params.id)
+        const user = rows[0]
+        delete user.password
 
-        res.status(200).json(rows[0])
+        res.status(200).json(user)
     } catch (error) {
         res.status(500).json(error)
     }

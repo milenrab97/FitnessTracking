@@ -21,6 +21,7 @@ const muscleGroupsRouter = require('./routes/muscleGroups')
 const exerciseRouter = require('./routes/exercise')
 const caloriesRouter = require('./routes/calories')
 const trainingRouter = require('./routes/training')
+const calculatorsRouter = require('./routes/calculators')
 
 app.use('/users', userRouter)
 app.use('/products', productRouter)
@@ -29,6 +30,7 @@ app.use('/exercises', exerciseRouter)
 app.use('/calories', caloriesRouter)
 app.use('/trainings', trainingRouter)
 app.use('/auth', authRouter)
+app.use('/calculators', calculatorsRouter)
 
 app.listen(port, () => {
     console.log(`Listening on ${port}`)

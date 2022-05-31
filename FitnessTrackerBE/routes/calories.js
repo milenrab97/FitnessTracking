@@ -21,7 +21,7 @@ router.get('/', async function (req, res) {
     const date = new Date(req.query.date)
 
     try {
-        const query = 'SELECT user_takes_product.*, products.fats as productName, products.carbs, products.fats, products.proteins FROM user_takes_product JOIN products ON products_id = products.id WHERE users_id = ?'
+        const query = 'SELECT user_takes_product.*, products.name as productName, products.carbs, products.fats, products.proteins FROM user_takes_product JOIN products ON products_id = products.id WHERE users_id = ?'
         const rows = await pool.query(query, users_id)
         const productsTaken = rows.filter(r => {
             if (!req.query.date) {
